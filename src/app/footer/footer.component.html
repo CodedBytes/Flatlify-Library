@@ -1,0 +1,24 @@
+<footer>
+  <div class="container">
+    <!-- Logo -->
+    <div class="top-menu">
+      <img src="assets/logo.png" alt="assets/logo.png" width="230px"/>
+
+      <div class="links">
+        <ul>
+          <li *ngFor="let item of footerLinks; let i = index"><a href="{{ footerRouterLinks[i] }}"> {{ item }} </a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="social-media">
+      <a href="https://github.com/CodedBytes"><fa-icon [icon]="githubIcon" title="My Github"></fa-icon></a>
+      <a href="https://www.linkedin.com/in/joãovdev/"><fa-icon [icon]="linkedinIcon" title="My LinkedIn"></fa-icon></a>
+    </div>
+    <hr>
+    <div class="disclaimer">
+      <p>CodedBytes - All Rights Reserved</p>
+      <p>Made With Angular 17</p>
+    </div>
+  </div>
+</footer>
