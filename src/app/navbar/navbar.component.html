@@ -1,0 +1,10 @@
+<div class="navbar">
+  <h1>Flatlify - CSS Library</h1>
+  <nav>
+    <ul><!-- Loop through links -->
+      <li *ngFor="let name of menuItems; let i = index"><a href=" {{ menuLinks[i] }} "> {{name}} </a></li>
+    </ul>
+
+    <button (click)="redirecionarParaRota()" class="buy">Prices</button>
+  </nav>
+</div>

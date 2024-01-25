@@ -1,0 +1,21 @@
+<div class="centralize">
+  <h1>Plans</h1>
+  <p>The most cheap prices for the most flat-looking library!</p>
+  <p></p>
+</div>
+
+<section class="prices">
+  <div class="card" *ngFor="let item of cards; let t = index">
+    <div class="wrapper" [id]="'plan-'+t">
+      <h3>{{ item.plan_name }}</h3>
+      <span> {{ item.price }} </span>
+
+      <div class="descriptions">
+          <div class="list" *ngFor="let i of item.descriptions"><img src="/assets/check.png" alt="" width="20px" height="20px"> <span>{{ i }}</span></div>
+      </div>
+
+      <button type="button" *ngIf="item.price == 'FREE';"> DOWNLOAD </button>
+      <button type="button" *ngIf="item.price != 'FREE';"> BUY </button>
+    </div>
+  </div>
+</section>

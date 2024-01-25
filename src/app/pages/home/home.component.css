@@ -1,0 +1,4 @@
+section.home {
+  min-height: calc(100vh - 450px);
+  padding: 220px 20px 20px 20px;
+}
